@@ -84,6 +84,7 @@ ul li a:hover{
     justify-content: center;
     margin-top: 150px;
     height: auto;
+    text-transform: capitalize;
     /* background-color: tomato; */
     /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);  */
 }
@@ -124,11 +125,12 @@ ul li a:hover{
     margin-bottom: 50px;
 }
 .row{
-    width: 1200px;
+    width: 100%;
     justify-content: space-around;
-    padding: 40px 100px;
+    padding: 30px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 .box{
     text-align: center;
@@ -141,6 +143,7 @@ ul li a:hover{
     padding: 25px 40px; 
     border-radius: 5px ;
     background-color: var(--white);
+    margin-top: 45px;
 }
 .box i{
     font-size: 40px;
@@ -148,29 +151,24 @@ ul li a:hover{
 }
 .box:hover{
     box-shadow: 5px 10px 18px #888888;
-    /* background-color: var(--gray);
-    color: var(--white); */
+    /* background-color: var(--gray); */
+     /* color: var(--white); */
     /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
 }
 .box h5{
     text-transform: capitalize;
 }
 
-
-
-
-
-
 /* Services */
 .services{
     /* background-color: yellowgreen; */
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .services_container{
     max-width: 1080px;
     margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+    /* padding-left: 25px;
+    padding-right: 25px; */
 
 }
 .services_row{
@@ -180,12 +178,12 @@ ul li a:hover{
     justify-content: space-around;
 }
 .col-4{
-    flex-basis: 25%;
+    flex-basis: 30%;
     padding: 10px;
     min-width: 200px;
     margin-bottom: 50px;
     transition: transform 0.5s;
-    /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 }
 .col-4 img{
     width: 100%;
@@ -231,29 +229,3 @@ footer{
 }
 
 
-
-/* @media Query for responsiveness */
-@media only screen and (max-width: 800px){
-    nav ul{
-        position: absolute;
-        top: 70px;
-        left: 0;
-        background: #333;
-        width: 100%;
-        overflow: hidden;
-        transition: max-height 0.5s;
-    }
-    nav ul li{
-        display: block;
-        margin-right: 80px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    nav ul li a{
-        color: #fff;
-    }
-    .menu-icon{
-        display: block;
-        cursor: pointer;
-    }
-}

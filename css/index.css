@@ -187,7 +187,7 @@ ul li a:hover{
     height: 400px;
     width: 100%;
     background-attachment: fixed;
-    background-image: url('../img/backgrounds/background-1.jpg');
+    background-image: url('../img/backgrounds/background-6.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover
@@ -236,10 +236,91 @@ h4{
     transform: translate(-50%);
 }
 
+
+
+
+
+
+/* Choose US */
+.choose_us{
+    text-align: center;
+    height: auto;
+    width: 100%;
+    background-image: url('../img/backgrounds/background-5.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.choose_us_h1{
+    padding: 30px;
+}
+.choose_container{
+    width: 100%;
+    /* height: 100%; */
+    padding: 30px 100px;
+    /* background-color: var(--gray); */
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-3{
+    flex-basis: 30%;
+    padding: 25px;
+    min-width: 200px;
+    min-height: 250px;
+    margin-bottom: 50px;
+    /* border-radius: 5px;
+    border: 1px solid var(--gray); */
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: var(--white);
+    justify-content: space-around;
+    padding: 10px;
+}
+.top_circle{
+    margin-top: -60px;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+.top_circle span{
+    font-size: 20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #b63327;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+.choose_us_text{
+    height: 70%;
+    padding: 10px;
+}
+.choose_us_text strong{
+    padding-bottom: 10px;
+
+}
+.choose_us_lear_more{
+    margin-top: 5px;
+}
+.choose_us_text a{
+    color: #ff523b;
+    text-decoration: none;
+    padding-top: 10px ;
+    font-size: 12px;
+}
+.choose_us_text a:hover{
+    color: #333;
+    
+}
+
 /* Footer */
 footer{
     height: 300px;
-    background-color: var(--gray);
+    background-color: green;
 }
 
 
@@ -279,6 +360,11 @@ footer{
         float: right;
         display: block;
         cursor: pointer;
+    }
+    .col-3{
+        flex-basis: 55%;
+        padding: 10px;
+        min-height: 250px;
     }
 }
 

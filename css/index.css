@@ -11,6 +11,7 @@
 /* html{
     font-size: 62.5px;
 } */
+
 .header .background img{
     position: absolute;
     height: 100%; 
@@ -44,22 +45,22 @@ ul{
     display: inline-table;
 }
 ul li{
-    float: right;
+    display: inline-block;
     list-style: none;
     /* font-size: 1.3rem; */
 }
-ul li a{
+#MenuItems  li a{
     padding: 10px;
     color: var(--white);
     text-decoration: none;
     border-radius: 20px ;
     cursor: pointer;
 }
-ul li a:hover{
+#MenuItems ul li a:hover{
     /* background: rgb(209, 209, 209); */
     color: rgb(19, 19, 19);
 }
-.icons{
+#MenuItems .icons{
     margin-left: 10px;
 }
 .nav a i{
@@ -123,7 +124,7 @@ ul li a:hover{
     background-color: white;
     margin-top: 159px;
     /* margin-bottom: 50px; */
-    background-color: #333;
+    /* background-color: #333; */
 }
 .row{
     margin-bottom: 30px;
@@ -253,16 +254,18 @@ h4{
 }
 .choose_us_h1{
     padding: 30px;
+    color: #fff;
 }
 .choose_container{
-    width: 100%;
-    /* height: 100%; */
-    padding: 30px 100px;
-    /* background-color: var(--gray); */
+    max-width: 1080px;
+    padding: 30px 25px 80px 25px;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: auto;
+    /* padding-left: 25px;
+    padding-right: 25px; */
 }
 .col-3{
     flex-basis: 30%;
@@ -317,11 +320,139 @@ h4{
     
 }
 
+
+
+
+/* Testimonial */
+
+.small_container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.testtimonial{
+    padding-top: 100px;
+}
+.testtimonial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.testtimonial .col-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.testtimonial .col-3:hover{
+    transform: translateY(-10px);
+}
+.fa-quote-left{
+    font-size: 34px;
+    color: #ff523b;
+}
+.col-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+.testtimonial .col-3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+
+
 /* Footer */
 footer{
-    height: 300px;
-    background-color: green;
+    /* height: 300px; */
+    width: 100%;
+    margin-top: -24px;
+    position: absolute;
+    background-color: #333;
+    text-align: center;
 }
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.footer_container{
+    justify-content: space-around;
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+    padding: 25px;
+}
+.footer_row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+footer ul a{
+    color: var(--white);
+    text-decoration: none;
+    /* border-radius: 20px ; */
+    cursor: pointer;
+}
+.footer_col-4{
+    flex-basis: 25%;
+}
+.app-logo img{
+    width: 120px;
+}
+footer h3{
+    color: #fff;
+    /* text-align: left; */
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.footer_col-4 ul{
+    margin-left: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer ul li{
+    display: flex;
+    text-transform: capitalize;
+}
+footer ul li i{
+    font-size: 12px;
+    padding: 5px;
+}
+footer ul li{
+   color: #fff;
+}
+footer ul li a{
+    font-size: 11px;
+    padding: 5px;
+    text-align: left;
+}
+.copyright{
+    background-color: #fff;
+}
+footer ul li a:hover{
+    color: black;
+}
+.fa-envelope{
+    font-size: 10px
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -334,7 +465,7 @@ footer{
         margin-top: 170px;
     }
     .col-4{
-        flex-basis: 80%;
+        flex-basis: 45%;
     }
     .navbar{
         padding: 10px;
@@ -360,11 +491,50 @@ footer{
         float: right;
         display: block;
         cursor: pointer;
+        margin-left: 8px;
     }
     .col-3{
-        flex-basis: 55%;
+        flex-basis: 70%;
         padding: 10px;
-        min-height: 250px;
+        min-height: 200px;
+    }
+    footer h3{
+        margin-top: 10px;
+    }
+    .footer_col-4{
+        margin-bottom: 10px;
+        flex-basis: 35%;
+    }
+
+}
+
+@media only screen and (max-width: 586px){
+    .intro{
+        text-align: center;
+        font-size: .9rem;
+        margin-top: 170px;
+    }
+    .col-4{
+        flex-basis: 100%;
+    }
+    .navbar{
+        padding: 10px;
+        font-weight: 500;
+    }
+
+    .menu_bar{
+        margin-left: 15px;
+    }
+    .col-3{
+        flex-basis: 50%;
+    }
+}
+@media only screen and (max-width: 586px){
+    .footer_col-4{
+        flex-basis: 100%;
+    }
+    .footer_col-4 ul li{
+        text-align: center;
     }
 }
 

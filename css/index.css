@@ -45,6 +45,7 @@ ul{
     display: inline-table;
 }
 ul li{
+    float: right;
     display: inline-block;
     list-style: none;
     /* font-size: 1.3rem; */
